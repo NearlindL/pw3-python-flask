@@ -13,7 +13,20 @@ def home():
 
 @app.route('/games')
 def games():
-    return render_template('games.html')
+    titulo = "SilkSong"
+    ano = 2025
+    categoria = "metroid vania"
+    
+    jogadores = ['Eduardo', 'Ana', 'Guilherme', 'Caio', 'Antônio']
+    
+    return render_template('games.html',
+                           titulo=titulo,
+                           ano=ano,
+                           categoria=categoria,
+                           jogadores=jogadores
+                           )
+
+                            
 
 @app.route('/consoles')
 def consoles():

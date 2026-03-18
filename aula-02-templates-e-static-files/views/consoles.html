@@ -2,7 +2,17 @@
 {% extends 'base.html' %}
 
 {% block content %}
+<main>
     <h1>Consoles em destaque</h1>
     <hr>
+
+    <h3>Top players - Ranking</h3>
+
+    <ol>
+        {% for console in cosoles %}
+        <li>{{ console }}</li>
+        {% endfor %}
+    </ol>
+    </main>
     <!-- <p><a href="/">Voltar</a></p> -->
 {% endblock content %}
